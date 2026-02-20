@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-core
+langchain-openai
+langchain-community
+langchain-huggingface
+langgraph
+python-dotenv
+# Local embeddings (no API cost)
+sentence-transformers
+langchain-text-splitters
+faiss-cpu
+# Document loaders
+pypdf
+docx2txt
