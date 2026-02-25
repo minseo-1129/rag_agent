@@ -177,25 +177,25 @@ def search_documents(query: str) -> str:
         return f"Error during document search: {e}"
 
 
-#def web_search(query: str) -> str:
-#    """Search the web for very recent or current information not available in the knowledge base.
+def web_search(query: str) -> str:
+    """Search the web for very recent or current information not available in the knowledge base.
     
-#    Examples of when to use this:
-#    - Current news or events (e.g., "latest mental health research 2024")
-#    - Real-time information (e.g., "current wait times for NHS mental health services")
-#    - Recently updated guidelines or policies
+    Examples of when to use this:
+    - Current news or events (e.g., "latest mental health research 2024")
+    - Real-time information (e.g., "current wait times for NHS mental health services")
+    - Recently updated guidelines or policies
     
-#    Do NOT use this for:
-#    - General mental health information (use search_documents instead)
-#    - Coping strategies or self-help resources (use search_documents instead)
-#    - Support services and helplines (use search_documents instead)
-#    """
-#    try:
-#        search = DuckDuckGoSearchRun()
-#        results = search.run(query)
-#        return results
-#    except Exception as e:
-#        return f"Error during web search: {e}"
+    Do NOT use this for:
+    - General mental health information (use search_documents instead)
+    - Coping strategies or self-help resources (use search_documents instead)
+    - Support services and helplines (use search_documents instead)
+    """
+    try:
+        search = DuckDuckGoSearchRun()
+        results = search.run(query)
+        return results
+    except Exception as e:
+        return f"Error during web search: {e}"
 
 
 # ── Prompt ────────────────────────────────────────────────────────────────────
@@ -259,5 +259,5 @@ _tools = [
 graph = create_react_agent(
     model=f"openai:{OPENAI_MODEL}",
     tools=_tools,
-#    prompt=prompt,
+    prompt=prompt,
 )
