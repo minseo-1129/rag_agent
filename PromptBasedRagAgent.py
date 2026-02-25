@@ -39,8 +39,8 @@ RESOURCE_URLS = [
     },
     {
         "url": "https://www.westlondon.nhs.uk/our-services/adult/mental-health-services/Employment-Support-Services-Individual-Placement-and-Support/employment-support-services-your-community",
-        "description": "Support services and resources in West London Trust"
-    },
+        "description": "West London Trust - Support services and resources"
+    },    
     # Add more URLs here as needed:
     # {
     #     "url": "https://www.nhs.uk/mental-health/",
@@ -225,6 +225,12 @@ PRIMARY TOOL - search_documents:
 - This searches both local documents AND trusted web resources (already indexed)
 - Use it for: coping strategies, support services, helplines, self-help resources, professional guidance
 
+SECONDARY TOOL - web_search:
+- ONLY use this in rare cases when you need VERY recent information (last few weeks/months)
+- Examples: "latest mental health statistics 2024", "new NHS policy announced this month"
+- Do NOT use for general mental health information - that's in search_documents
+- If you're unsure, try search_documents first
+
 OTHER TOOLS:
 - get_current_date: Use when date/time information is relevant to the conversation
 
@@ -237,7 +243,7 @@ If the user shows resistance to feeling emotions for more than 3 conversational 
    - For web resources: Include the description and URL
    - For local files: Include the filename
 5. Explain WHY you're suggesting this specific resource based on their situation
-6. After sharing the resource, provide a brief summary of the conversation and close
+6. After sharing the resource, provide a brief summary of the conversation and avoid task-oriented discussion
 
 When citing sources:
 - Be specific: "According to [source name] at [URL]..." or "From the document [filename]..."
@@ -253,6 +259,7 @@ When citing sources:
 _tools = [
     get_current_date,
     search_documents,
+    web_search,
 ]
 
 graph = create_react_agent(
