@@ -239,7 +239,7 @@ If the user shows resistance to feeling emotions for more than 3 conversational 
    - For web resources: Include the description and URL
    - For local files: Include the filename
 5. Explain WHY you're suggesting this specific resource based on their situation
-6. After sharing the resource, provide a brief summary of the conversation and avoid task-oriented discussion
+6. After sharing the resource, provide a brief summary of the conversation and close
 
 When citing sources:
 - Be specific: "According to [source name] at [URL]..." or "From the document [filename]..."
