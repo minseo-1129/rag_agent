@@ -253,7 +253,6 @@ When citing sources:
 _tools = [
     get_current_date,
     search_documents,
-    web_search,
 ]
 
 graph = create_react_agent(
