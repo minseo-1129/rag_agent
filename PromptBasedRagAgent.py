@@ -37,6 +37,10 @@ RESOURCE_URLS = [
         "url": "https://www.lbhf.gov.uk/health-and-care/reach-out-help-available?gad_source=1&gad_campaignid=22048830849",
         "description": "LBHF Reach Out - Local mental health and wellbeing support services"
     },
+    {
+        "url": "https://www.westlondon.nhs.uk/our-services/adult/mental-health-services/Employment-Support-Services-Individual-Placement-and-Support/employment-support-services-your-community",
+        "description": "Support services and resources in West London Trust"
+    },
     # Add more URLs here as needed:
     # {
     #     "url": "https://www.nhs.uk/mental-health/",
